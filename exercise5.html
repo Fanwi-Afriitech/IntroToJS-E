@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5</title>
+    <link rel="stylesheet" href="exercise5.css">
+
+    <script>
+
+     var myswap = ["blue","green","red","yellow","purple","orange"];
+     var i=0;
+     
+        function mychange(){
+            i=i+1
+            if(i==myswap.length){
+              i=0;
+            }
+      
+            document.getElementById('banner').style.backgroundColor=myswap[i];   
+           
+        }
+    
+        function myprevious(){
+            i=i-1;
+            if(i<0){
+              i=myswap.length-1s
+            }
+            document.getElementById('banner').style.backgroundColor=myswap[i];  
+           
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="banner">
+        <h1>This is only the beginning...</h1>
+    </div>
+    <div id="buttons">
+        <input type="button" value="previous" onclick="myprevious()"/>
+        <input type="button" value="next"
+        onclick="mychange()"/>
+    </div>
+    
+</body>
+</html>
